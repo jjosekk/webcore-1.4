@@ -106,6 +106,7 @@ body {
 }
 
 .button:hover {
+    cursor: pointer;
     opacity: 0.5;
     transition-duration: 1s;
 }
