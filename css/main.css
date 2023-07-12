@@ -4,43 +4,44 @@
     font-weight: 400;
     font-family: TT Lakes;
     font-style: normal;
-    src: url('/fonts/TTLakes-Regular.ttf') format('truetype');
+    src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-weight: 500;
     font-family: TT Lakes;
     font-style: normal;
-    src: url('/fonts/TTLakes-Medium.ttf') format('truetype');
+    src: url('../fonts/TTLakes-Medium.ttf') format('truetype');
 }
 
 @font-face {
     font-weight: 700;
     font-family: TT Lakes;
     font-style: normal;
-    src: url('/fonts/TTLakes-Bold.ttf') format('truetype');
+    src: url('../fonts/TTLakes-Bold.ttf') format('truetype');
 }
 
 body {
     color: black;
     background-color: #F8F8F8;
     font-family: 'TT Lakes';
-    overflow: hidden;
+    /* overflow: hidden; */
+}
+
+.menu {
+    height: 100vh;
 }
 
 .menu__container {
-    padding: 18px 24px 0 24px;
+    display: flex;
+    flex-direction: column;
+    padding: 18px 24px 32px 24px;
     width: 320px;
+    height: 100%;
     background-color: #ffffff;
     box-shadow: 
     16px 0px 52px 0px rgba(14, 24, 80, 0.20), 
     -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
-}
-
-.menu {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
 }
 
 .menu__header {
@@ -134,17 +135,15 @@ body {
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.2px;
-    margin-bottom: 32px;
 }
 
-.menu__choose-language--ru {
+.language__button--ru {
     color: #7E7E82;
 }
 
 
-@media (max-height: 786px) {
+@media (max-height: 804px) {
     .menu {
-        white-space: nowrap;
-        overflow: scroll;
+        height: 100%;
     }
 }
