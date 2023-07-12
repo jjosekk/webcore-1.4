@@ -137,7 +137,7 @@ body {
     letter-spacing: -0.2px;
 }
 
-.language__button--ru {
+.menu__language-button--active {
     color: #7E7E82;
 }
 
